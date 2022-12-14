@@ -1,0 +1,30 @@
+﻿<ContentDialog
+    x:Class="PetsApp.Dialogs.FoodChooser"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PetsApp.Dialogs"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="Choose one!">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Button  Grid.Row="0" Grid.Column="0" VerticalAlignment="Stretch" Content="Bacon Snack" Tag="BaconSnack" Click="Food_Click" HorizontalAlignment="Stretch"/>
+        <Button  Grid.Row="1" Grid.Column="0" VerticalAlignment="Stretch" Content="Dry Dog Food" Tag="DryDogFood" Click="Food_Click" HorizontalAlignment="Stretch"/>
+        <Button  Grid.Row="2" Grid.Column="0" VerticalAlignment="Stretch" Content="Dry Cat Food" Tag="DryCatFood" Click="Food_Click" HorizontalAlignment="Stretch"/>
+        <Button  Grid.Row="0" Grid.Column="1" VerticalAlignment="Stretch" Content="Tuna" Tag="Tuna" Click="Food_Click" HorizontalAlignment="Stretch"/>
+        <Button  Grid.Row="1" Grid.Column="1" VerticalAlignment="Stretch" Content="Water" Tag="Water" Click="Food_Click" HorizontalAlignment="Stretch"/>
+        <Button  Grid.Row="1" Grid.Column="2" VerticalAlignment="Stretch" Content="Plant Food" Tag="PlantFood" Click="Food_Click" HorizontalAlignment="Stretch"/>
+        <Button  Grid.Row="0" Grid.Column="3" VerticalAlignment="Stretch" Content="Fish Food" Tag="FishFood" Click="Food_Click" HorizontalAlignment="Stretch"/>
+    </Grid>
+</ContentDialog>
